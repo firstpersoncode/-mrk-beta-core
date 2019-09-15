@@ -1,0 +1,58 @@
+{
+  "name": "@mrk-beta/core",
+  "version": "1.0.0-beta",
+  "description": "",
+  "scripts": {
+    "test": "jest --coverage --runInBand",
+    "check": "npm-check"
+  },
+  "bin": {
+    "my-react-kit": "./scripts/index.js"
+  },
+  "main": "dist/lib.js",
+  "keywords": [
+    "ssr",
+    "setup",
+    "webpack",
+    "config",
+    "generator",
+    "javascript",
+    "typescript",
+    "es6",
+    "react",
+    "type"
+  ],
+  "author": "Nasser Maronie",
+  "license": "MIT",
+  "jest": {
+    "coverageThreshold": {
+      "global": {
+        "branches": 100,
+        "functions": 100,
+        "lines": 100,
+        "statements": 100
+      }
+    },
+    "collectCoverageFrom": [
+      "src/*.@(ts|tsx|js|jsx)"
+    ]
+  },
+  "devDependencies": {
+    "babel-jest": "^24.9.0",
+    "babel-loader": "^8.0.6",
+    "jest": "^24.9.0",
+    "jest-cli": "^24.9.0",
+    "webpack-cli": "^3.3.8"
+  },
+  "dependencies": {
+    "@mrk-beta/server": "^1.0.0-beta",
+    "@mrk-beta/webpack": "^1.0.6-beta",
+    "chalk": "^2.4.2",
+    "express": "^4.17.1",
+    "nodemon": "^1.19.2"
+  },
+  "peerDependencies": {
+    "@mrk-beta/server": "^1.0.0-beta",
+    "@mrk-beta/webpack": "^1.0.0-beta"
+  }
+}
